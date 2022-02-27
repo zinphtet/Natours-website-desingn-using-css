@@ -1,0 +1,19 @@
+{
+  "name": "natour",
+  "version": "1.0.0",
+  "description": "exercise",
+  "main": "index.html",
+  "scripts": {
+    "compile-css": "sass sass/style.scss css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zinphtet/Natours-website-desingn-using-css.git"
+  },
+  "author": "zph",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zinphtet/Natours-website-desingn-using-css/issues"
+  },
+  "homepage": "https://github.com/zinphtet/Natours-website-desingn-using-css#readme"
+}
