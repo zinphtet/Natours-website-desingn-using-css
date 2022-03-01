@@ -38,3 +38,46 @@
 	font-weight: 700;
 	text-transform: uppercase;
 }
+
+.heading-card {
+	position: absolute;
+	top: 12rem;
+	right: 2rem;
+	text-transform: uppercase;
+	font-size: 3rem;
+	font-weight: 300;
+	width: 75%;
+	text-align: right;
+	color: $white-color;
+
+	&-1 {
+		padding: 1rem 1.5rem;
+		-webkit-box-decoration-break: clone;
+		box-decoration-break: clone;
+		background-image: linear-gradient(
+			to right bottom,
+			rgba($secondary-color-light, 0.8),
+			rgba($secondary-color-dark, 0.8)
+		);
+	}
+	&-2 {
+		padding: 1rem 1.5rem;
+		-webkit-box-decoration-break: clone;
+		box-decoration-break: clone;
+		background-image: linear-gradient(
+			to right bottom,
+			rgba($primary-light, 0.8),
+			rgba($primary-dark, 0.8)
+		);
+	}
+	&-3 {
+		padding: 1rem 1.5rem;
+		-webkit-box-decoration-break: clone;
+		box-decoration-break: clone;
+		background-image: linear-gradient(
+			to right bottom,
+			rgba($tertiary-color-light, 0.8),
+			rgba($tertiary-color-dark, 0.8)
+		);
+	}
+}

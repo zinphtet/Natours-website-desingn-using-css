@@ -3,20 +3,26 @@
 	padding: 25rem 0;
 	margin-top: -20vh;
 }
-// .composition-photo {
-// 	&-1 {
-// 		position: absolute;
-// 		top: -2rem;
-// 	}
-// 	&-2 {
-// 		position: absolute;
-// 		top: 0rem;
-// 	}
-// 	&-3 {
-// 		position: absolute;
-// 		top: 2rem;
-// 	}
-// }
+.section-feature {
+	padding: 20rem 0;
+	background-image: linear-gradient(
+			to right bottom,
+			rgba($primary-light, 0.8),
+			rgba($primary-dark, 0.8)
+		),
+		url('../img/nat-4.jpg');
+	background-size: cover;
+	transform: skewY(-7deg);
+	margin-top: -7.5rem;
+	& > * {
+		transform: skewY(7deg);
+	}
+}
+.section-tour {
+	padding: 25rem 0rem 10rem 0rem;
+	background-color: $background-color-gray;
+	margin-top: -7.5rem;
+}
 
 .img-composition {
 	width: 100%;
@@ -26,7 +32,7 @@
 		z-index: 1;
 		outline-offset: 2rem;
 		transition: all 0.2s;
-        box-shadow: 0 1.5rem 3rem rgba($gray-color, 0.6);
+		box-shadow: 0 1.5rem 3rem rgba($gray-color, 0.6);
 
 		&-1 {
 			top: -2rem;
