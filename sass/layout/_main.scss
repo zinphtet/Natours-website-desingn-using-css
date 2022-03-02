@@ -29,6 +29,14 @@
 
 	position: relative;
 }
+.section-book {
+	padding: 15rem 0rem;
+	background-image: linear-gradient(
+		to right bottom,
+		$primary-light,
+		$primary-dark
+	);
+}
 
 .img-composition {
 	width: 100%;
