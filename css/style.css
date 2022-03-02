@@ -234,6 +234,11 @@ body {
   margin-top: -7.5rem;
 }
 
+.section-stories {
+  padding: 15rem 20rem;
+  position: relative;
+}
+
 .img-composition {
   width: 100%;
   position: relative;
@@ -321,15 +326,15 @@ body {
 }
 
 .btn2 {
-  color: #7ed56f;
+  color: #28b485;
   text-decoration: none;
   padding: 0.3rem 0;
-  border-bottom: 2px solid #55c57a;
+  border-bottom: 2px solid #28b485;
   transition: all 0.3s;
 }
 .btn2:hover {
   transform: translateY(-0.3rem);
-  background-color: #55c57a;
+  background-color: #28b485;
   color: #fff;
   box-shadow: 0 0.5rem 0.5rem #777;
 }
@@ -445,6 +450,70 @@ body {
 }
 .card-details ul li:not(:last-child) {
   border-bottom: 1px solid #eee;
+}
+
+.story {
+  background-color: #fff;
+  padding: 6rem;
+  padding-left: 9rem;
+  transform: skewX(-12deg);
+}
+.story .figure {
+  width: 15rem;
+  height: 15rem;
+  background-color: orangered;
+  float: left;
+  -webkit-shape-outside: circle(50% at 50% 50%);
+  clip-path: circle(50% at 50% 50%);
+  transform: translateX(-3rem) skewX(12deg);
+  position: relative;
+  overflow: hidden;
+}
+.story .figure-img {
+  height: 100%;
+  text-align: center;
+  transform: translateX(-4rem) scale(1.4);
+  transition: all 0.3s;
+  backface-visibility: hidden;
+}
+.story .figure-caption {
+  color: #fff;
+  z-index: 10;
+  position: absolute;
+  top: 50%;
+  left: 55%;
+  transform: translate(-50%, 10%);
+  font-size: 2rem;
+  text-transform: uppercase;
+  opacity: 0;
+  transition: all 0.3s;
+  backface-visibility: hidden;
+}
+.story:hover .figure-caption {
+  transform: translate(-50%, -50%);
+  opacity: 1;
+}
+.story:hover .figure-img {
+  transform: translateX(-4rem) scale(1);
+  filter: blur(0.3rem) brightness(80%);
+}
+.story-text {
+  transform: skewX(12deg);
+}
+
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.bg-video-content {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  opacity: 0.15;
 }
 
 /*# sourceMappingURL=style.css.map */

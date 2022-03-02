@@ -56,14 +56,14 @@
 }
 
 .btn2 {
-	color: $primary-light;
+	color: $primary-dark;
 	text-decoration: none;
 	padding: 0.3rem 0;
-	border-bottom: 2px solid $primary-color;
+	border-bottom: 2px solid $primary-dark;
 	transition: all 0.3s;
 	&:hover {
 		transform: translateY(-0.3rem);
-		background-color: $primary-color;
+		background-color: $primary-dark;
 		color: $white-color;
 		box-shadow: 0 0.5rem 0.5rem $gray-color;
 	}
