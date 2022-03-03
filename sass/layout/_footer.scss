@@ -1,0 +1,47 @@
+.footer {
+	&-logo {
+		text-align: center;
+		img {
+			width: 15rem;
+		}
+	}
+	&-nav {
+		border-top: 2px solid $gray-color;
+		padding-top: 2rem;
+		display: inline-block;
+
+		ul {
+			list-style-type: none;
+			li {
+				display: inline-block;
+				transition: all 0.3s;
+				backface-visibility: hidden;
+				&:not(:last-child) {
+					margin-right: 1.5rem;
+				}
+				&:hover {
+					transform: skewY(7deg) scale(1.3);
+					box-shadow: 0rem 0.5rem 0.5rem rgba(0, 0, 0, 0.7);
+					background-color: transparent;
+					color: $primary-dark;
+				}
+				&:hover a {
+					color: $primary-dark;
+				}
+				a {
+					text-transform: uppercase;
+					text-decoration: none;
+					color: $white-color;
+					font-size: 1.4rem;
+				}
+			}
+		}
+	}
+	.copy-right {
+		float: right;
+		width: 80%;
+		border-top: 2px solid $gray-color;
+		padding-top: 2rem;
+		color: white;
+	}
+}
