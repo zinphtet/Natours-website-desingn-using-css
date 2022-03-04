@@ -56,11 +56,11 @@
 		z-index: 300;
 
 		label {
-			// border: 1px solid red;
 			padding: 0rem 1.7rem 3rem 0.5rem;
 			border-radius: 50%;
-			// background-color: red;
+			// visibility: hidden;
 			color: transparent;
+			user-select: none;
 		}
 		&-line-top,
 		&-line-medium,
