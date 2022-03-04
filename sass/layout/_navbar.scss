@@ -98,6 +98,20 @@
 		left: 0%;
 		opacity: 1;
 	}
+	.checkbox:checked ~ .navbar-top .navbar-top-line-medium {
+		background-color: red;
+		display: none;
+	}
+	.checkbox:checked ~ .navbar-top .navbar-top-line-top {
+		transform: rotate(45deg);
+		transform-origin: -0.5rem -1.5rem;
+		// padding-right: 2rem;
+	}
+	.checkbox:checked ~ .navbar-top .navbar-top-line-bottom {
+		transform: rotate(-45deg);
+		transform-origin: 0 1.5rem;
+		// padding-right: 2rem;
+	}
 
 	.navbars {
 		width: 100%;

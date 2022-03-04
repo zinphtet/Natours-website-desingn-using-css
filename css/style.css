@@ -393,6 +393,18 @@ body {
   left: 0%;
   opacity: 1;
 }
+.navbar .checkbox:checked ~ .navbar-top .navbar-top-line-medium {
+  background-color: red;
+  display: none;
+}
+.navbar .checkbox:checked ~ .navbar-top .navbar-top-line-top {
+  transform: rotate(45deg);
+  transform-origin: -0.5rem -1.5rem;
+}
+.navbar .checkbox:checked ~ .navbar-top .navbar-top-line-bottom {
+  transform: rotate(-45deg);
+  transform-origin: 0 1.5rem;
+}
 .navbar .navbars {
   width: 100%;
   height: 100vh;
