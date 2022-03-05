@@ -43,5 +43,8 @@
 		border-top: 2px solid $gray-color;
 		padding-top: 2rem;
 		color: white;
+		@include mediaQuery(tablet-port) {
+			width: 100%;
+		}
 	}
 }

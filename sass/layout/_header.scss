@@ -9,6 +9,9 @@
 	background-position: top;
 	background-size: cover;
 	clip-path: polygon(0 1%, 100% 0, 100% 75vh, 0% 100%);
+	@include mediaQuery(tablet-port) {
+		clip-path: polygon(0 1%, 100% 0, 100% 85vh, 0% 100%);
+	}
 	position: relative;
 	&_logo-box {
 		position: absolute;
@@ -26,5 +29,14 @@
 		transform: translate(-50%, -50%);
 		color: $white-color;
 		text-align: center;
+		// @include mediaQuery(tablet-land) {
+		// 	color: blue;
+		// }
+		// @include mediaQuery(tablet-port) {
+		// 	color: #d41595;
+		// }
+		// @include mediaQuery(phone) {
+		// 	color: red;
+		// }
 	}
 }

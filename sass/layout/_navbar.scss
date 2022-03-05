@@ -42,6 +42,10 @@
 		border-radius: 50%;
 		transition: all 0.7s;
 		z-index: 200;
+		@include mediaQuery(tablet-land) {
+			top: 3.5rem;
+			right: 3.5rem;
+		}
 	}
 	&-top {
 		position: fixed;
@@ -54,7 +58,10 @@
 		z-index: inherit;
 		cursor: pointer;
 		z-index: 300;
-
+		@include mediaQuery(tablet-land) {
+			top: 3rem;
+			right: 3rem;
+		}
 		label {
 			padding: 0rem 1.7rem 3rem 0.5rem;
 			border-radius: 50%;

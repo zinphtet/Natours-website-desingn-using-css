@@ -1,5 +1,11 @@
 .heading_primary {
 	margin-bottom: 6rem;
+	@include mediaQuery(tablet-land) {
+		margin-bottom: 5rem;
+	}
+	@include mediaQuery(tablet-port) {
+		margin-bottom: 4rem;
+	}
 	&-main {
 		display: block;
 		text-transform: uppercase;
@@ -7,6 +13,17 @@
 		font-size: 6rem;
 		letter-spacing: 3.5rem;
 		animation: textMoveFromLeft 1s ease-out;
+		@include mediaQuery(tablet-land) {
+			font-size: 5.5rem;
+			letter-spacing: 3rem;
+		}
+		@include mediaQuery(tablet-port) {
+			font-size: 5rem;
+			letter-spacing: 2.5rem;
+		}
+		@include mediaQuery(phone) {
+			letter-spacing: 2rem;
+		}
 	}
 	&-sub {
 		display: block;
@@ -15,6 +32,14 @@
 		font-weight: 700;
 		letter-spacing: 1.74rem;
 		animation: textMoveFromRight 1s ease-out;
+		@include mediaQuery(tablet-land) {
+			font-size: 2.1rem;
+			letter-spacing: 1rem;
+		}
+		@include mediaQuery(tablet-port) {
+			font-size: 2rem;
+			letter-spacing: 0.5rem;
+		}
 	}
 }
 .heading_secondary {
@@ -29,6 +54,16 @@
 	&:hover {
 		transform: skewY(3.5deg) skewX(20deg);
 		text-shadow: 0.2rem 0.8rem 1rem rgba($gray-color, 0.5);
+	}
+	@include mediaQuery(tablet-land) {
+		font-size: 3rem;
+	}
+	@include mediaQuery(tablet-port) {
+		font-size: 2.5rem;
+	}
+	@include mediaQuery(phone) {
+		font-size: 2.5rem;
+		letter-spacing: 0.1rem;
 	}
 }
 

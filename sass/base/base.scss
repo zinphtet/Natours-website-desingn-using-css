@@ -7,6 +7,15 @@
 }
 html {
 	font-size: 62.5%;
+	@include mediaQuery(tablet-land) {
+		font-size: 56.25%;
+	}
+	@include mediaQuery(tablet-port) {
+		font-size: 50%;
+	}
+	@include mediaQuery(big-desktop) {
+		font-size: 75%;
+	}
 }
 body {
 	padding: 3rem;
@@ -18,4 +27,10 @@ body {
 	box-sizing: border-box;
 	position: relative;
 	overflow-x: hidden;
+	@include mediaQuery(tablet-land) {
+		padding: 1.5rem;
+	}
+	@include mediaQuery(tablet-port) {
+		padding: 0rem;
+	}
 }

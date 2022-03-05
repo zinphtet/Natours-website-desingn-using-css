@@ -3,3 +3,30 @@
 	clear: both;
 	display: table;
 }
+// moblie phone - 0 to 600px
+//tablet port - 600 to 900px
+//tablet landscape - 900 to 1200px
+//Big desktop  - 1800++
+//1em = 16px
+@mixin mediaQuery($breakpoint) {
+	@if $breakpoint== phone {
+		@media only screen and (max-width: 37.5em) {
+			@content;
+		}
+	}
+	@if $breakpoint==tablet-port {
+		@media only screen and (max-width: 56.25em) {
+			@content;
+		}
+	}
+	@if $breakpoint==tablet-land {
+		@media only screen and (max-width: 75em) {
+			@content;
+		}
+	}
+	@if $breakpoint==big-desktop {
+		@media only screen and (min-width: 112.5em) {
+			@content;
+		}
+	}
+}
