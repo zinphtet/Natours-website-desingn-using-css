@@ -1022,18 +1022,18 @@ body {
 }
 
 .book {
-  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.8) 50%, rgba(0, 0, 0, 0) 50%), url("../../img/nat-10.jpg");
+  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.8) 50%, rgba(0, 0, 0, 0) 50%), url(../../img/nat-10.jpg);
   background-size: cover;
   height: 50rem;
 }
 @media only screen and (max-width: 56.25em) {
   .book {
-    background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.8) 60%, rgba(0, 0, 0, 0) 60%), url("../../img/nat-10.jpg");
+    background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.8) 60%, rgba(0, 0, 0, 0) 60%), url(../../img/nat-10.jpg);
   }
 }
 @media only screen and (max-width: 56.25em) {
   .book {
-    background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.8) 100%, rgba(0, 0, 0, 0) 100%), url("../../img/nat-10.jpg");
+    background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.8) 100%, rgba(0, 0, 0, 0) 100%), url(../../img/nat-10.jpg);
   }
 }
 .book .form {
