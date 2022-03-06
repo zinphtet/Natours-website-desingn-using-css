@@ -14,7 +14,7 @@
 		transform: translateX(-3rem) skewX(12deg);
 		position: relative;
 		overflow: hidden;
-		@include mediaQuery (phone){
+		@include mediaQuery(phone) {
 			transform: translateX(-3rem) skewX(0deg);
 		}
 
@@ -55,5 +55,6 @@
 	}
 	@include mediaQuery(phone) {
 		transform: skewX(0deg);
+		padding: 1rem 1rem 1rem 5rem;
 	}
 }

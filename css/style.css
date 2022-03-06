@@ -91,6 +91,11 @@ body {
   }
 }
 
+::selection {
+  background-color: #55c57a;
+  color: #fff;
+}
+
 .heading_primary {
   margin-bottom: 6rem;
 }
@@ -636,6 +641,14 @@ body {
 .navbar .navbars ul li a span {
   margin-right: 1.5rem;
 }
+@media only screen and (max-width: 37.5em) {
+  .navbar .navbars ul li a {
+    font-size: 2.3rem;
+  }
+  .navbar .navbars ul li a span {
+    margin-right: 1rem;
+  }
+}
 
 .popup {
   z-index: 999999;
@@ -678,12 +691,27 @@ body {
   opacity: 0;
   transition: all 0.5s;
 }
+@media only screen and (max-width: 75em) {
+  .popup-main {
+    padding: 2rem;
+  }
+}
+@media only screen and (max-width: 56.25em) {
+  .popup-main {
+    width: 95%;
+  }
+}
 .popup-main-imgs {
   display: table-cell;
 }
 .popup-main-imgs img {
   width: 30rem;
   display: block;
+}
+@media only screen and (max-width: 37.5em) {
+  .popup-main-imgs {
+    display: none;
+  }
 }
 .popup-main .terms {
   display: table-cell;
@@ -791,6 +819,12 @@ body {
   position: relative;
   border-radius: 0.5rem;
 }
+@media only screen and (max-width: 75em) {
+  .card {
+    height: auto;
+    perspective: none;
+  }
+}
 .card-side {
   height: 55rem;
   transition: all 0.8s;
@@ -799,6 +833,14 @@ body {
   left: 0;
   width: 100%;
   backface-visibility: hidden;
+}
+@media only screen and (max-width: 75em) {
+  .card-side {
+    position: relative;
+    display: block;
+    height: 60rem;
+    transition: all 0s;
+  }
 }
 .card-front-img {
   height: 25rem;
@@ -824,6 +866,16 @@ body {
   text-align: center;
   position: relative;
 }
+@media only screen and (max-width: 75em) {
+  .card-back {
+    transform: rotateY(0deg);
+    bottom: 0;
+    height: 25rem;
+    padding: 4rem 0;
+    clip-path: polygon(0 14%, 100% 0, 100% 100%, 0% 100%);
+    margin-top: -5rem;
+  }
+}
 .card-back .cta {
   position: absolute;
   top: 50%;
@@ -832,6 +884,11 @@ body {
 }
 .card-back .cta .card-price {
   margin-bottom: 5rem;
+}
+@media only screen and (max-width: 75em) {
+  .card-back .cta .card-price {
+    margin-bottom: 3rem;
+  }
 }
 .card-back .cta .card-price-only {
   font-size: 1.5rem;
@@ -861,6 +918,11 @@ body {
 }
 .card:hover .card-front {
   transform: rotateY(180deg);
+}
+@media only screen and (max-width: 75em) {
+  .card:hover .card-front {
+    transform: rotateY(0deg);
+  }
 }
 .card:hover .card-back {
   transform: rotateY(0deg);
@@ -940,6 +1002,7 @@ body {
 @media only screen and (max-width: 37.5em) {
   .story {
     transform: skewX(0deg);
+    padding: 1rem 1rem 1rem 5rem;
   }
 }
 

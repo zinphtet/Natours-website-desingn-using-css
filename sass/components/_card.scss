@@ -3,8 +3,11 @@
 	height: 55rem;
 	width: 100%;
 	position: relative;
-	// overflow: hidden;
 	border-radius: 0.5rem;
+	@include mediaQuery(tablet-land) {
+		height: auto;
+		perspective: none;
+	}
 	&-side {
 		height: 55rem;
 		transition: all 0.8s;
@@ -13,6 +16,12 @@
 		left: 0;
 		width: 100%;
 		backface-visibility: hidden;
+		@include mediaQuery(tablet-land) {
+			position: relative;
+			display: block;
+			height: 60rem;
+			transition: all 0s;
+		}
 	}
 	&-front-img {
 		height: 25rem;
@@ -50,6 +59,15 @@
 	}
 	&-back {
 		transform: rotateY(-180deg);
+		@include mediaQuery(tablet-land) {
+			transform: rotateY(0deg);
+			bottom: 0;
+			height: 25rem;
+			padding: 4rem 0;
+			clip-path: polygon(0 14%, 100% 0, 100% 100%, 0% 100%);
+
+			margin-top: -5rem;
+		}
 		text-align: center;
 		position: relative;
 		.cta {
@@ -59,6 +77,9 @@
 			transform: translate(-50%, -50%);
 			.card-price {
 				margin-bottom: 5rem;
+				@include mediaQuery(tablet-land) {
+					margin-bottom: 3rem;
+				}
 				&-only {
 					font-size: 1.5rem;
 					color: $white-color;
@@ -105,6 +126,9 @@
 	}
 	&:hover &-front {
 		transform: rotateY(180deg);
+		@include mediaQuery(tablet-land) {
+			transform: rotateY(0deg);
+		}
 	}
 	&:hover &-back {
 		transform: rotateY(0deg);
@@ -113,6 +137,7 @@
 		ul {
 			padding: 4rem;
 			list-style-type: none;
+
 			li {
 				font-weight: 400;
 				text-decoration: none;

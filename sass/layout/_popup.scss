@@ -39,12 +39,21 @@
 		//  transform: scale(0.25);
 		opacity: 0;
 		transition: all 0.5s;
+		@include mediaQuery(tablet-land) {
+			padding: 2rem;
+		}
+		@include mediaQuery(tablet-port) {
+			width: 95%;
+		}
 		&-imgs {
 			img {
 				width: 30rem;
 				display: block;
 			}
 			display: table-cell;
+			@include mediaQuery(phone) {
+				display: none;
+			}
 		}
 		.terms {
 			display: table-cell;
